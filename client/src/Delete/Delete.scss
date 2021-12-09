@@ -1,0 +1,28 @@
+@import "./../_globals";
+
+.deleteContent {  
+    &__name {
+        font-weight: bold;
+        font-size:18px;
+        padding-top:10px;
+        padding-bottom:15px;
+        color:$accent-color;
+    }
+
+    &__description {
+        padding-bottom:20px;
+    }    
+
+    &__button {
+        background-color: $accent-color;
+        color:white;
+        margin-right:5px;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    &__button:hover {
+        background-color:$text-color;
+        color: white;
+    }
+
+}

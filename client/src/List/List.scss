@@ -1,0 +1,42 @@
+@import "./../_globals";
+
+.content {  
+    @include display-flex();
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &__section {
+        margin-bottom:20px;
+    }
+
+    &__caption {
+        font-weight: bolder;
+        color: $accent-color;
+        padding-top:15px;
+        padding-bottom:10px;
+    }
+    
+    &__list {
+        border-left: 5px solid $accent_color;
+        margin-left:30px;
+        padding-left:10px;
+        padding-top:5px;        
+        padding-bottom:3px;                
+
+        & a {
+            font-weight: bold;
+            font-size:14px;
+            color:$accent-color;
+            text-decoration: none;
+        }
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media #{$phone} {
+    .content {  
+        flex-flow: row wrap;
+    }
+}

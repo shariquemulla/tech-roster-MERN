@@ -1,0 +1,60 @@
+@import "./../_globals";
+
+.content {  
+    &__name {
+        font-weight: bold;
+        font-size:18px;
+        padding-top:10px;
+        padding-bottom:15px;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size:14px;
+        color:$text-color;
+        padding-bottom:5px;
+        & a {
+            font-weight: bold;
+            font-size:14px;
+            color:$accent-color;
+            text-decoration: none;
+        }
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__difficulty {
+        padding-bottom:10px;
+    }
+
+    &__rating {
+        padding-left:2px;
+        color:$greyed-color;
+    }
+
+    &__rating--filled {
+        color:$accent-color;
+    }    
+
+    &__course {
+        border-left: 5px solid $accent_color;
+        margin-left:40px;
+        padding-left:10px;
+        padding-top:5px;        
+        padding-bottom:5px;
+    }
+
+    &__description {
+        padding-bottom:20px;
+    }    
+
+    &__button {
+        color:$text-color;
+        margin-right:5px;
+    }
+    &__button:hover {
+        color:$accent-color;
+    }
+
+}

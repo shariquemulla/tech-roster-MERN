@@ -1,0 +1,32 @@
+$tablet: "screen and (max-width:660px)";
+$phone: "screen and (max-width:660px)";
+$accent-color:#a72f57;
+$text-color:#000000;
+$background-color:#FFFFFF;
+$greyed-color: #C0C0C0;
+
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+button {
+    background-color: $accent-color;
+    color:white;
+    margin-right:5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color:$text-color;
+    color: white;
+}
+
+button:disabled {
+    background-color: grey;
+    color: black;
+}
