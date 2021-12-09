@@ -1,0 +1,35 @@
+@import "./../_globals";
+
+.userForm {
+    padding: 10px 5px;
+  
+    &__field {
+      margin: 10px 0;
+  
+      & > textarea {
+        height: 100px;
+      }
+    }
+  
+    &__input {
+      background-color: rgb(245, 245, 245);
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 75%;
+    //   font-size: $base_font_size;
+    }
+  
+    &__error {
+    //   display: none;
+      color: red;
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+  }
+
+input[type=checkbox] {
+  margin: 10px 5px 5px 0;
+}
+  
